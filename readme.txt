@@ -1,29 +1,58 @@
-DOTween and DOTween Pro are copyright (c) 2014-2018 Daniele Giardini - Demigiant
-
-// IMPORTANT!!! /////////////////////////////////////////////
-// Upgrading DOTween from versions older than 1.2.000 ///////
-// (or DOTween Pro older than 1.0.000) //////////////////////
--------------------------------------------------------------
-If you're upgrading your project from a version of DOTween older than 1.2.000 (or DOTween Pro older than 1.0.000) please follow these instructions carefully.
-1) Import the new version in the same folder as the previous one, overwriting old files. A lot of errors will appear but don't worry
-2) Close and reopen Unity (and your project). This is fundamental: skipping this step will cause a bloodbath
-3) Open DOTween's Utility Panel (Tools > Demigiant > DOTween Utility Panel) if it doesn't open automatically, then press "Setup DOTween...": this will run the upgrade setup
-4) From the Add/Remove Modules panel that opens, activate/deactivate Modules for Unity systems and for external assets (Pro version only)
-
-// GET STARTED //////////////////////////////////////////////
-
-- After importing a new DOTween update, select DOTween's Utility Panel from the "Tools/Demigiant" menu (if it doesn't open automatically) and press the "Setup DOTween..." button to activate/deactivate Modules. You can also access a Preferences Tab from there to choose default settings for DOTween.
-- In your code, add "using DG.Tweening" to each class where you want to use DOTween.
-- You're ready to tween. Check out the links below for full documentation and license info.
+Requires Unity 2019.4/2020/2021/2022/2023 or newer (run its setup utility after installing to activate shortcuts and features based on your current Unity version). If you have an older Unity version (down to 5.6.7) I got you, find more info near the bottom.
 
 
-// LINKS ///////////////////////////////////////////////////////
+IMPORTANT: if upgrading from a version older than 1.2.420, follow these instructions carefully.
 
-DOTween website (documentation, examples, etc): http://dotween.demigiant.com
-DOTween license: http://dotween.demigiant.com/license.php
-DOTween repository (Google Code): https://code.google.com/p/dotween/
-Demigiant website (documentation, examples, etc): http://www.demigiant.com
 
-// NOTES //////////////////////////////////////////////////////
+DOTween is a fast, efficient, fully type-safe object-oriented animation engine, optimized for C# (it is also the evolution of HOTween, my previous Unity tween engine).
 
-- DOTween's Utility Panel can be found under "Tools > Demigiant > DOTween Utility Panel" and also contains other useful options, plus a tab to set DOTween's preferences
+
+NOTE: DOTween Pro is also available, with additional shorcuts for external plugins, a Visual Path Editor, a Visual Animation Editor and a script-only low-level API to animate TextMesh Pro texts per-character (skew, scale, rotate, move).
+
+
+
+FEATURES
+
+Lightweight, highly optimized, performant, memory efficient
+Modular (you can activate/deactivate references to major Unity systems like physics/UI/etc)
+Animate anything, either with shortcuts or with DOTween's generic way
+Tween strings with rich text support and scrambling options
+Organize your tweens in complex groups that can be controlled as a single tween
+Tons of control methods (Play, Pause, Goto, Rewind, Complete, and more)
+Looping (with Yoyo and Incremental additional options), easing (including custom easing with AnimationCurves), from and relative tweens, and more
+A wide array of callbacks
+WaitFor(tweenEvent) methods that can be used inside coroutines
+Blendable tweens
+Animate objects along linear or curved paths with constant speed (or not: you choose), with various orientation options
+Extra options depending on the tween type, like snapping or rotating along an object's self space
+Utility Panel which allows you to set DOTween's preferences
+DOTween Inspector, which shows you additional data while playing in Unity Editor
+Additional DOVirtual methods for extra features (like calling a method after a given delay)
+Safe mode
+And much more... (full list of features)
+
+EXTRA SHORTCUTS FOR EXTERNAL ASSETS
+
+(enabled when setting up DOTween from its Utility Panel)
+
+Easy Performant Outline
+
+DOTween works from Unity 5.6.7 to Unity 2023 or newer. Run its setup utility after installing it to activate shortcuts and features based on your current Unity version.
+
+NOTE: Since the Asset Store supports only packages made with Unity 2019.4 or newer, you can find updated DOTween versions compatible with older Unity versions here.
+
+
+
+SUPPORTED PLATFORMS
+
+Windows, OSX, Linux, Unity WebGL, WebPlayer, iOS, Android, Windows Phone/Store, PlayStation, Xbox, PS Vita/PSM, Switch
+
+
+
+LINKS
+
+DOTween website
+Online documentation
+Support
+Unity Forums Thread
+Demigiant's website
